@@ -1,0 +1,44 @@
+
+<!-- -----------------Navigation ---------------------------------->
+<nav class="navbar navbar-expand navbar-dark fixed-top ">
+    <div class="container-sm"> <!-- using sm instead of fluid for better alignment -->
+        <!-- navigation logo area -->
+        <a class="navbar-brand col-4" id="brand" href="#">
+            {% load static %}
+            <img src="{% static 'portfolioSite/media/catcitylogo-greenblack2-30.png' %}" alt="Catikia" width="30" height="30" class="d-inline-block align-text-top"/>
+             Catikia <div class="navbar-brand2" id="brand2">Python | SQL | CSS | HTML</div>
+        </a>
+        <!-- navigation drop-down area -->
+        <div class="navbar-nav" col-5>
+            <div class="nav-item dropdown me-auto">
+                <a class="nav-link dropdown-toggle" href="home.html" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#about">About</a></li>
+                    <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </div>
+            </div>
+            <div class="nav-item"><!--future link to finished blog/leaving div for spacing-->
+                <!--<a class="nav-link" href="#">Library</a>-->
+            </div>
+        </div><!--end overall nav item div -->
+        <!-- Adds social icons -->
+        <div class="navbar col-xl-1" id="socials">
+            <a id="github" href="https://github.com/Catikia" target="_blank">
+              {% load static %}
+                <img src="{% static 'portfolioSite/media/github-mark-light-32px.png' %}" alt="github.com/Catikia" width="30" height="30" class="d-inline-block align-text-top"/>
+            </a>
+            <a id="twitter" href="https://twitter.com/CatikiaCodes" target="_blank">
+              {% load static %}
+                <img src="{% static 'portfolioSite/media/twitter-circle-white.png' %}" alt="twitter.com/CatikiaCodes" width="30" height="30" class="d-inline-block align-text-top"/>
+            </a>
+            <a id="emailme" href="mailto:catikia1@gmail.com" target="_blank">
+              {% load static %}
+                <img src="{% static 'portfolioSite/media/email-400.png' %}" alt="catikia1@gmail.com" width="30" height="30" class="d-inline-block align-text-top"/>
+            </a>
+        </div>
+    </div><!--end container-sm div -->
+</nav><!--end nav -->

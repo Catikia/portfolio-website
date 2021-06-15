@@ -1,0 +1,205 @@
+/*
+Catikia's Portfolio
+Author: Catikia
+Started: 5/29/2021
+Style Sheet
+*/
+
+/*
+---color Scheme---
+C2D8B1 = lt grey/green
+F9FAFA = light grey
+
+---also used in nav and links---
+adb5bd = medium grey
+0C0D0E = dark grey
+50A216 = green
+204009 = dk green
+9516A0 = pink/purple
+4F0B55 = dk purple
+*/
+
+
+/*----------------------Navigation--------------------------------------------*/
+nav {
+  background-color: #adb5bd;/* For browsers that do not support gradients */
+  background: linear-gradient(to left, transparent, #0C0D0E),
+      linear-gradient(1deg, #0C0D0E, 30%, transparent),
+      linear-gradient(179deg, #0C0D0E, 30%, transparent),
+      linear-gradient(to right, transparent, #0C0D0E),
+      linear-gradient(184deg, transparent 18%, #204009 19% 20%, transparent 21%),
+      linear-gradient(192deg, transparent 23%, #50A216 24% 25%, transparent 26%),
+      linear-gradient(210deg, transparent 27%, #9516A0 28% 29%, transparent 30%),
+      linear-gradient(170deg, transparent 33%, #4F0B55 34% 35%, transparent 36%),
+      linear-gradient(173deg, transparent 37%, #204009 38% 39%, transparent 40%),
+      linear-gradient(187deg, transparent 43%, #50A216 44% 45%, transparent 46%),
+      linear-gradient(173deg, transparent 58%, #9516A0 59% 60%, transparent 61%),
+      linear-gradient(170deg, transparent 63%, #204009 64% 65%, transparent 66%),
+      linear-gradient(173deg, transparent 68%, #50A216 69% 70%, transparent 71%),
+      linear-gradient(177deg, transparent 73%, #9516A0 74% 75%, transparent 76%),
+      linear-gradient(181deg, transparent 81%, #4F0B55 82% 83%, transparent 84%);
+       /* gradient background */
+  font-family: "sans-serif", Verdana, sans-serif;
+  color: #F9FAFA; /*font color for non links*/
+
+}
+.navbar-brand{
+  color:  #F9FAFA;
+}
+.navbar-brand:hover {
+  color:  #adb5bd;
+}
+.navbar-brand2{ /* formats text green under cat logo */
+  color:  #50A216;
+  font-size: 70%;
+}
+.navbar .nav-item .nav-link { /* formats navbar links */
+	color: #F9FAFA;
+  align-content: flex-end;
+  text-align: right;
+}
+.navbar .dropdown-item { /* formats navbar dropdown links */
+/*	background-color: #0C0D0E; /* For browsers that do not support gradients */
+/*	background: linear-gradient(to left, transparent, #0C0D0E),
+    linear-gradient(1deg, #0C0D0E, 30%, transparent),
+    linear-gradient(179deg, #0C0D0E, 30%, transparent); */
+    background-color: #adb5bd;/* For browsers that do not support gradients */
+    background: linear-gradient(to left, transparent, #0C0D0E),
+        linear-gradient(1deg, #0C0D0E, 30%, transparent),
+        linear-gradient(179deg, #0C0D0E, 30%, transparent),
+      /*  linear-gradient(to right, transparent, #0C0D0E),*/
+        linear-gradient(184deg, transparent 18%, #204009 19% 20%, transparent 21%),
+        linear-gradient(192deg, transparent 23%, #50A216 24% 25%, transparent 26%),
+        linear-gradient(210deg, transparent 27%, #9516A0 28% 29%, transparent 30%),
+        linear-gradient(170deg, transparent 33%, #4F0B55 34% 35%, transparent 36%),
+        linear-gradient(173deg, transparent 37%, #204009 38% 39%, transparent 40%),
+        linear-gradient(187deg, transparent 43%, #50A216 44% 45%, transparent 46%),
+        linear-gradient(173deg, transparent 58%, #9516A0 59% 60%, transparent 61%),
+        linear-gradient(170deg, transparent 63%, #204009 64% 65%, transparent 66%),
+        linear-gradient(173deg, transparent 68%, #50A216 69% 70%, transparent 71%),
+        linear-gradient(177deg, transparent 73%, #9516A0 74% 75%, transparent 76%),
+        linear-gradient(181deg, transparent 81%, #4F0B55 82% 83%, transparent 84%);
+         /* gradient background */
+	  color: #F9FAFA;
+}
+.navbar .dropdown-item:hover { /* formats navbar dropdown links on hover */
+	color: #adb5bd;
+}
+#socials a:link {
+    opacity: 1;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=100);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Triggers "hasLayout" in IE 7 and lower */
+    transform: translate(-5%, -5%);
+    transition: all 0.3s ease;
+    color:  #F9FAFA;
+}
+#socials a:link:hover {
+    opacity: 0.5;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=50);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-15%, -15%);
+    transition: all 0.3s ease;
+    color:  #adb5bd;
+}
+/*----------------------main page--------------------------------------------*/
+body {/*configures area behind page*/
+    position: relative;
+    font-family: "sans-serif", Verdana, sans-serif;
+    /*background: linear-gradient(90deg, #0C0D0E, transparent 5%);*/
+    /*linear-gradient(-90deg, transparent, #0C0D0E 95%);*/
+    background: #F9FAFA;
+    margin-top: 5em;
+}
+body a:link {
+  color: #34680E;
+}
+
+body a:link:hover {
+  color: #9516A0;
+}
+body a:visited {
+  color: #204009;
+}
+body a:visited:hover {
+  color: #9516A0;
+}
+.section-anchor { /* lines up scrolling for navigation section links */
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    /*visibility: hidden;*/
+    top: -5em; /* minus the height of the top navigation */
+}
+#aboutarea {
+  text-align: center;
+}
+/*--------------------Project area-------------------------------------------*/
+#project-section h4 {
+    text-align: center;
+}
+#project-section {
+  background: #C2D8B1; /* green/grey background behind projects */
+  border-radius: 50% 3% / 3% 40%;
+}
+#projects1 {
+    background: #F9FAFA; /* light grey */
+    border-radius: 50% 3% / 3% 40%;
+}
+/*---------------------bottom of page-------------------------------------*/
+#contactarea {
+  background-color: #adb5bd;/* For browsers that do not support gradients */
+  background: linear-gradient(to left, transparent, #0C0D0E),
+      linear-gradient(1deg, #0C0D0E, 30%, transparent),
+      linear-gradient(179deg, #0C0D0E, 30%, transparent),
+      linear-gradient(to right, transparent, #0C0D0E),
+      linear-gradient(184deg, transparent 18%, #204009 19% 20%, transparent 21%),
+      linear-gradient(192deg, transparent 23%, #50A216 24% 25%, transparent 26%),
+      linear-gradient(210deg, transparent 27%, #9516A0 28% 29%, transparent 30%),
+      linear-gradient(170deg, transparent 33%, #4F0B55 34% 35%, transparent 36%),
+      linear-gradient(173deg, transparent 37%, #204009 38% 39%, transparent 40%),
+      linear-gradient(187deg, transparent 43%, #50A216 44% 45%, transparent 46%),
+      linear-gradient(173deg, transparent 58%, #9516A0 59% 60%, transparent 61%),
+      linear-gradient(170deg, transparent 63%, #204009 64% 65%, transparent 66%),
+      linear-gradient(173deg, transparent 68%, #50A216 69% 70%, transparent 71%),
+      linear-gradient(177deg, transparent 73%, #9516A0 74% 75%, transparent 76%),
+      linear-gradient(181deg, transparent 81%, #4F0B55 82% 83%, transparent 84%);
+       /* gradient background */
+  font-family: "sans-serif", Verdana, sans-serif;
+  color: #F9FAFA; /*font color for non links*/
+}
+.contact a {
+    opacity: 1;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=100);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Triggers "hasLayout" in IE 7 and lower */
+    transform: translate(-5%, -5%);
+    transition: all 0.3s ease;
+    color: #F9FAFA; /*font color*/
+}
+.contact a:hover {
+    opacity: 0.5;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=50);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-15%, -15%);
+    transition: all 0.3s ease;
+    color: #F9FAFA; /*font color*/
+}
+.contact a:visited {
+    opacity: .8;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=80);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-5%, -5%);
+    transition: all 0.3s ease;
+    color: #F9FAFA; /*font color*/
+}
+.contact a:visited:hover {
+    opacity: 0.5;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=50);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-15%, -15%);
+    transition: all 0.3s ease;
+    color: #F9FAFA; /*font color*/
+}
+.contact #brand2 { /* formats text in contact section under cat logo */
+  color:  #50A216;
+  font-size: 90%;
+}

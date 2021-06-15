@@ -1,0 +1,78 @@
+{% extends 'example.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <br>
+
+    <!-----------------about area ---------------------------------->
+    <div class="container-sm" id="aboutarea">
+        <a class="section-anchor" id="about"></a>
+        <div class="row"> <!-- Start row for About heading -->
+           <div class="col-12" > <!-- Start column size 12 -->
+               <h5>
+                  Hi! I'm Cat!
+               </h5>
+               <p>
+                     I am a developer who strives to write clean, readable code while
+                   creating user-friendly programs and websites. I have an
+                   AAS in programming and a creative soul.  I look forward to meeting you
+                   and helping you achieve your goals.
+               </p>
+           </div> <!-- End column size 12 -->
+        </div> <!-- End Row for About heading -->
+        <br> <!-- adds space before next section -->
+    </div>
+
+    <!-------------------- Projects area -------------------------------------->
+    <div class="container-sm" id="project-section"> <!-- Start div container for projects area -->
+        <a class="section-anchor" id="projects"></a>
+        <br>
+        <div class="row"> <!-- Start row for project heading -->
+            <h4>Cat's Projects</h4>
+        </div> <!-- End Row for project heading -->
+        <br>
+
+        <!--loops through all projects and lists them individually-->
+        {% for project in object_list %}
+            <!-- Start row for project & cycles id for CSS formatting -->
+            <div class="row" id="{% cycle 'projects1' 'projects2' %}">
+                <div class="col-5 col-lg-4"> <!-- Start column size 5 -->
+                    <br>
+                    <h5>  {{project.name}} </h5>
+                    <!--Loops through and displays all languages for each project-->
+                    <p>
+                        {% for language_or_framework in project.language_or_framework.all %}
+                            {{language_or_framework}}<br>
+                        {% endfor %}
+                    </p>
+                    <!-- displays clickable link to bring to project site if available -->
+                    {% if project.link is not blank %}
+                        <a href="{{project.link}}" target="_blank"> Click to see project</a><br>
+                        {% else %}
+                            <p><br></p>
+                        {% endif %}
+
+                        <!-- displays clickable link to bring to project code on github if available -->
+                        {% if project.code_link is not blank %}
+                            <a href="{{project.code_link}}" target="_blank"> Click to see code</a><br>
+                        {% else %}
+                            <p><br></p>
+                    {% endif %}
+                    <br>
+                </div> <!-- End column size 5 -->
+
+                <div class="col-7 col-lg-8"> <!-- Start column size 7 -->
+                    <br>
+                    <p> {{project.summary}} <br>
+                    <p> {{project.additional_thoughts | safe}} </p><br>
+                </div> <!-- End column size 7 -->
+            </div> <!-- End Project Row -->
+            <br>
+        {% endfor %}
+        <br> <!-- adds space before next section -->
+    </div> <!-- End div container for projects area -->
+    <br> <!-- adds space before next section -->
+</div> <!--end container row -->
+
+{% endblock %}

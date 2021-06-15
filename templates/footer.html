@@ -1,0 +1,42 @@
+
+    <!---------------------------Contact Area -------------------------------->
+    <div class="container-fluid" id="contactarea">
+        <div class="container-sm" > <!-- Start div container for contact area -->
+          <a class="section-anchor" id="contact"></a>
+          <br>
+          <div class="row contact"> <!-- Start row for contact area -->
+
+            <div class="col-sm-5"> <!-- Start column size 5 / 4 -->
+                {% load static %}
+                <h4>  <img src="{% static 'portfolioSite/media/catcitylogo-greenblack2-30.png' %}" alt="Catikia" width="30" height="30" id="brand"/>
+                   Catikia </h4><div id="brand2">Python | SQL | CSS | HTML</div>
+              </a>
+              <!--  <h4>Contact: Cat</h4>-->
+            </div><!-- End column size 5 -->
+
+            <div class="col-sm-7" id="socials"> <!-- Start column size 7 / 8 -->
+                <h4>Contact Information:</h4>
+                <!-- Adds social icons -->
+                <a id="emailme" href="mailto:catikia1@gmail.com" target="_blank">
+                  {% load static %}
+                    <img src="{% static 'portfolioSite/media/email-400.png' %}" alt="catikia1@gmail.com" width="30" height="30" class="d-inline-block align-text-top"/>
+                catikia1@gmail.com</a><br>
+                <a id="twitter" href="https://twitter.com/CatikiaCodes" target="_blank">
+                  {% load static %}
+                    <img src="{% static 'portfolioSite/media/twitter-circle-white.png' %}" alt="twitter.com/CatikiaCodes" width="30" height="30" class="d-inline-block align-text-top"/>
+                twitter.com/CatikiaCodes</a><br>
+                <a id="github" href="https://github.com/Catikia" target="_blank">
+                  {% load static %}
+                    <img src="{% static 'portfolioSite/media/github-mark-light-32px.png' %}" alt="github.com/Catikia" width="30" height="30" class="d-inline-block align-text-top"/>
+                github.com/Catikia</a><br>
+
+            </div><!-- End column size 7 / 8 -->
+
+          </div> <!-- End Row for contact area -->
+      </div> <!--end container row -->
+      <br>
+    </div> <!-- End div container for contact area -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>

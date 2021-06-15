@@ -1,0 +1,27 @@
+
+<head>
+    <!--Author: Catikia
+    Date: 5/24/2021
+    -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Site specific CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/portfolioSite/css/portfolio.css' %}">
+
+    <!-- SEO Business description -->
+    <meta name='Description' content="Catikia is a developer who strives to write clean, readable code while creating user-friendly programs and websites." />
+
+    <!-- SEO site/business/page name -->
+    <title>
+        {% block title %}
+            Catikia's Portfolio
+        {% endblock %}
+    </title>
+</head>
